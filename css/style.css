@@ -1,0 +1,613 @@
+/*==========================================================================================
+                    GLOBAL STYLES
+========================================================================================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  src: url(../Montserrat-Regular.ttf);
+  font-family: Montserrat;
+}
+
+body {
+  background: #efefef;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-heading {
+  background: #f0f8ff;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.section-heading i {
+  font-size: 25px;
+}
+
+.section-heading h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/*==================================================================================================
+                                      MAIN SECTION 
+==================================================================================================*/
+.main-content {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+}
+
+.main-content .left-content {
+  background: midnightblue;
+  color: #fff;
+  padding: 50px 30px;
+}
+
+.main-content .left-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.4);
+}
+
+.main-content .left-content .profile-img {
+  text-align: center;
+}
+
+.main-content .left-content h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.main-content .left-content h4 {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/*======================================================================
+                      CONTACT SECTION
+=======================================================================*/
+
+.main-content .left-content .contact {
+  margin: 50px 0;
+}
+
+.main-content .left-content .contact .contact-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-content .left-content .contact .contact-flex i {
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.main-content .left-content .contact .contact-flex .last {
+  padding: 5px 8px;
+}
+
+.main-content .left-content .contact .contact-flex p {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/*====================================================================
+                    SKILLS & TECH SECTIONS
+===================================================================*/
+.main-content .left-content .skills,
+.main-content .left-content .tech {
+  margin-bottom: 50px;
+}
+
+.main-content .left-content .skills .skills-content,
+.main-content .left-content .tech .tech-content {
+  margin-bottom: 25px;
+}
+
+.main-content .left-content .skills .skills-content .skills-bar,
+.main-content .left-content .tech .tech-content .tech-bar {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: relative;
+}
+
+.main-content .left-content .skills .skills-content .skills-bar::after,
+.main-content .left-content .tech .tech-content .tech-bar::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: #fff;
+  top: -7px;
+}
+
+.main-content .left-content .skills .skills-content .skill-first::after {
+  animation: skill-first 3s;
+  left: 70%;
+}
+
+.main-content .left-content .skills .skills-content .skill-second::after {
+  left: 80%;
+  animation: skill-second 3s;
+}
+
+.main-content .left-content .skills .skills-content .skill-third::after {
+  animation: skill-third 3s;
+  left: 60%;
+}
+
+.main-content .left-content .skills .skills-content .skill-fourth::after {
+  animation: skill-fourth 3s;
+  left: 85%;
+}
+
+@keyframes skill-first {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 70%;
+  }
+}
+
+@keyframes skill-second {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 80%;
+  }
+}
+
+@keyframes skill-third {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 60%;
+  }
+}
+
+@keyframes skill-fourth {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 85%;
+  }
+}
+
+.main-content .left-content .tech .tech-content .tech-first::after {
+  animation: tech-first 3s;
+  left: 90%;
+}
+
+.main-content .left-content .tech .tech-content .tech-second::after {
+  animation: tech-second 3s;
+  left: 55%;
+}
+
+.main-content .left-content .tech .tech-content .tech-third::after {
+  animation: tech-third 3s;
+  left: 70%;
+}
+
+.main-content .left-content .tech .tech-content .tech-fourth::after {
+  animation: tech-fourth 3s;
+  left: 60%;
+}
+
+@keyframes tech-first {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 90%;
+  }
+}
+
+@keyframes tech-second {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 55%;
+  }
+}
+
+@keyframes tech-third {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 70%;
+  }
+}
+
+@keyframes tech-fourth {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 60%;
+  }
+}
+
+/*===============================================
+              HOBBIES SECTION
+=============================================*/
+.main-content .left-content .hobbies {
+  margin-bottom: 50px;
+}
+
+.main-content .left-content .hobbies ul {
+  list-style: none;
+}
+
+.main-content .left-content .hobbies ul li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/*===============================================
+              LANGUAGE SECTION
+=============================================*/
+.main-content .left-content .language {
+  text-align: center;
+}
+
+.main-content .left-content .language .language-container {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-content .left-content .language .language-container:hover {
+  transform: scale(0.96);
+}
+
+.main-content .left-content .language .language-container .language-inner {
+  width: 130px;
+  height: 130px;
+  background: midnightblue;
+  margin: auto;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content .left-content .language .language-container .language-inner p {
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+/*======================================================================
+                  RIGHT CONTENT SECTION
+======================================================================*/
+.main-content .right-content {
+  background: #fff;
+}
+
+/*===============================================
+              NAME SECTION
+=============================================*/
+.main-content .right-content .name {
+  padding: 50px 30px;
+  background: #f0f8ff;
+  color: #333;
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.4);
+}
+
+.main-content .right-content .name h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.main-content .right-content .name h2 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 10px 0 20px;
+}
+
+.main-content .right-content .name .social-links i {
+  color: #333;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/*===============================================
+              ABOUT SECTION
+=============================================*/
+.main-content .right-content .about {
+  padding: 30px 0;
+}
+
+.main-content .right-content .about p {
+  padding: 30px 50px 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+/*===============================================
+              EDUCATION SECTION
+=============================================*/
+.main-content .right-content .education .education-contents {
+  padding: 30px 50px;
+}
+
+.main-content .right-content .education .education-contents .education-content {
+  margin-bottom: 30px;
+}
+
+.main-content
+  .right-content
+  .education
+  .education-contents
+  .education-content:last-child {
+  margin-bottom: 0;
+}
+
+.main-content
+  .right-content
+  .education
+  .education-contents
+  .education-content
+  .education-subsection-heading {
+  margin-bottom: 15px;
+}
+
+.main-content
+  .right-content
+  .education
+  .education-contents
+  .education-content
+  .education-subsection-heading
+  p {
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.main-content
+  .right-content
+  .education
+  .education-contents
+  .education-content
+  .small {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+/*===============================================
+              EXPERIENCE SECTION
+=============================================*/
+.main-content .right-content .experience .experience-grid {
+  padding: 30px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.main-content
+  .right-content
+  .experience
+  .experience-grid
+  .experience-contents
+  p {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+/*===============================================
+              REFERENCE SECTION
+=============================================*/
+.main-content .right-content .reference .reference-grid {
+  padding: 30px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-content .right-content .reference .reference-grid p {
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.main-content .right-content .reference .reference-grid .reference-name {
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.main-content .right-content .reference .reference-grid .ref {
+  color: #333;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+/*======================================================
+                FOOTER SECTION
+=====================================================*/
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.footer p {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.footer p span {
+  margin-left: 5px;
+  color: dodgerblue;
+}
+
+.footer .footer-inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .footer-inner.container {
+  margin: 0 auto;
+}
+/*==================================================================================================
+                                      MEDIA QUERIES
+==================================================================================================*/
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 100%;
+  }
+
+  .main-content .left-content,
+  .main-content .right-content {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .main-content .left-content {
+    padding: 50px 20px;
+  }
+
+  .section-heading h2 {
+    font-size: 18px;
+  }
+
+  .main-content .left-content h3 {
+    font-size: 20px;
+  }
+
+  .main-content .left-content h4 {
+    font-size: 15px;
+  }
+
+  .main-content .left-content .contact .contact-flex p {
+    font-size: 13px;
+  }
+
+  .main-content .right-content .name {
+    padding: 40px 20px;
+  }
+
+  .main-content .right-content .name h1 {
+    font-size: 30px;
+  }
+
+  .main-content .right-content .name h2 {
+    font-size: 20px;
+  }
+
+  .main-content .right-content .about p {
+    padding: 30px 20px 0;
+  }
+
+  .main-content .right-content .education .education-contents {
+    padding: 30px 20px;
+  }
+
+  .main-content .right-content .experience .experience-grid {
+    padding: 30px 20px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .main-content
+    .right-content
+    .experience
+    .experience-grid
+    .experience-contents
+    p {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .main-content .right-content .reference .reference-grid {
+    padding: 30px 20px;
+  }
+
+  .main-content .right-content .reference .reference-grid .reference-box-1 {
+    margin-bottom: 20px;
+  }
+
+  .footer p {
+    text-align: center;
+  }
+}
