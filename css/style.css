@@ -445,7 +445,8 @@ a {
 }
 
 .main-content .right-content .experience .experience-contents .experience-content ul li{
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  list-style: disc;
 }
 
 /*===============================================
