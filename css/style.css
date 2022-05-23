@@ -383,14 +383,16 @@ a {
   letter-spacing: 1px;
 }
 
-/*===============================================
-              EDUCATION SECTION
-=============================================*/
-.main-content .right-content .education .education-contents {
+/*=======================================================
+              EDUCATION & EXPERIENCE SECTION
+=======================================================*/
+.main-content .right-content .education .education-contents, 
+.main-content .right-content .experience .experience-contents {
   padding: 30px 50px;
 }
 
-.main-content .right-content .education .education-contents .education-content {
+.main-content .right-content .education .education-contents .education-content,
+.main-content .right-content .experience .experience-contents .experience-content{
   margin-bottom: 30px;
 }
 
@@ -398,7 +400,8 @@ a {
   .right-content
   .education
   .education-contents
-  .education-content:last-child {
+  .education-content:last-child,
+.main-content .right-content .experience .experience-contents .experience-content:last-child{
   margin-bottom: 0;
 }
 
@@ -407,7 +410,8 @@ a {
   .education
   .education-contents
   .education-content
-  .education-subsection-heading {
+  .education-subsection-heading, 
+.main-content .right-content .experience .experience-contents .experience-content .experience-subsection-heading{
   margin-bottom: 15px;
 }
 
@@ -417,7 +421,8 @@ a {
   .education-contents
   .education-content
   .education-subsection-heading
-  p {
+  p,
+.main-content .right-content .experience .experience-contents .experience-content .experience-subsection-heading p{
   margin-bottom: 5px;
   letter-spacing: 1px;
   font-size: 15px;
@@ -428,12 +433,20 @@ a {
   .education
   .education-contents
   .education-content
-  .small {
+  .small,
+.main-content .right-content .experience .experience-contents .experience-content .small{
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 1.5;
 }
 
+.main-content .right-content .experience .experience-contents .experience-content ul{
+  list-style-type: none;
+}
+
+.main-content .right-content .experience .experience-contents .experience-content ul li{
+  margin-bottom: 10px;
+}
 /*===============================================
               EXPERIENCE SECTION
 =============================================*/
